@@ -27,7 +27,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        String moduleName = "pms";
+        String moduleName = "ums";
 
         //1、 代码生成器
         AutoGenerator mpg = new AutoGenerator();

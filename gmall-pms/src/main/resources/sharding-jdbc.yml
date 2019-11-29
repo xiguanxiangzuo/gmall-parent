@@ -1,0 +1,17 @@
+dataSources:
+  ds_master: !!com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.52.129:3307/gmall_pms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  ds_slave: !!com.zaxxer.hikari.HikariDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.52.129:3316/gmall_pms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+
+
+masterSlaveRule:
+  name: ds_ms
+  masterDataSourceName: ds_master
+  slaveDataSourceNames: [ds_slave]
