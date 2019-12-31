@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author 习惯向左
- * @since 2019-11-29
+ * @since 2019-12-01
  */
 public interface CommentMapper extends BaseMapper<Comment> {
 
